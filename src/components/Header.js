@@ -2,18 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart } from '../store/slices/cartSlice';
 
-
 const Header = () => {
-
     const { cartItems } = useSelector((state) => state.cart);
-
     const dispatch = useDispatch();
-
 
     const handleOpenCart = (open) => {
         dispatch(toggleCart(open));
     };
-
 
     const cartQuantity = cartItems.length;
 
@@ -42,7 +37,6 @@ const Header = () => {
         return () => clearTimeout(timer);
     }, [cartQuantity]);
 
-
     return (
         <>
             <header id="header">
@@ -63,7 +57,7 @@ const Header = () => {
                                 className="cart_icon"
                                 onClick={() => handleOpenCart(true)}
                             >
-                                <img src="/images/bag-icon.svg" alt="bag-icon" />
+                                <img src={`${process.env.PUBLIC_URL}/images/bag-icon.svg`} alt="bag-icon" />
                                 <span
                                     aria-label="Cart items count"
                                     data-testid="cart-badge"
