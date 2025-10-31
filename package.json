@@ -4,6 +4,7 @@
   "description": "Modern React shopping cart with Redux Toolkit - Built by Alvin Sony",
   "author": "Alvin Sony",
   "private": true,
+  "homepage": "https://Alvinsony07.github.io/redux-shopping-cart-main",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.4",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
