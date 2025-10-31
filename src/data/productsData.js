@@ -1,7 +1,7 @@
 const productsData = [
     {
         id: 1,
-        img: "/images/prod1.png",
+        img: `${process.env.PUBLIC_URL}/images/prod1.png`,
         rating: "★★★★★",
         title: "boAt Airdopes 131",
         price: 1099,
@@ -9,7 +9,7 @@ const productsData = [
     },
     {
         id: 2,
-        img: "/images/prod2.png",
+        img: `${process.env.PUBLIC_URL}/images/prod2.png`,
         rating: "★★★★",
         title: "boAt BassHeads 228",
         price: 649,
@@ -17,7 +17,7 @@ const productsData = [
     },
     {
         id: 3,
-        img: "/images/prod3.png",
+        img: `${process.env.PUBLIC_URL}/images/prod3.png`,
         rating: "★★★★★",
         title: "JBL Live 660NC",
         price: 9999,
@@ -25,7 +25,7 @@ const productsData = [
     },
     {
         id: 4,
-        img: "/images/prod4.png",
+        img: `${process.env.PUBLIC_URL}/images/prod4.png`,
         rating: "★★★★★",
         title: "boAt Rockerz 255",
         price: 899,
@@ -33,36 +33,36 @@ const productsData = [
     },
     {
         id: 5,
-        img: "/images/prod5.png",
-        rating: "★★★★",
-        title: "JBL Endurance Run Sports",
-        price: 999,
+        img: `${process.env.PUBLIC_URL}/images/prod5.png`,
+        rating: "★★★★★",
+        title: "boAt Rockerz 255 Pro",
+        price: 1499,
         quantity: 1,
     },
     {
         id: 6,
-        img: "/images/prod6.png",
+        img: `${process.env.PUBLIC_URL}/images/prod6.png`,
         rating: "★★★★",
-        title: "JBL Tune 230NC TWS",
-        price: 5999,
+        title: "boAt Airdopes 441",
+        price: 1999,
         quantity: 1,
     },
     {
         id: 7,
-        img: "/images/prod7.png",
+        img: `${process.env.PUBLIC_URL}/images/prod7.png`,
         rating: "★★★★★",
-        title: "boAt Rockerz 410",
-        price: 1599,
+        title: "boAt Airdopes 121v2",
+        price: 1099,
         quantity: 1,
     },
     {
         id: 8,
-        img: "/images/prod8.png",
-        rating: "★★★★",
-        title: "JBL Live 200BT",
-        price: 3699,
+        img: `${process.env.PUBLIC_URL}/images/prod8.png`,
+        rating: "★★★★★",
+        title: "boAt BassHeads 900",
+        price: 599,
         quantity: 1,
-    }
+    },
 ];
 
 export default productsData;
